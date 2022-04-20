@@ -18,7 +18,7 @@ public class Question4
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.println("Enter the number of * for the base of the Triangle: ");
+    // System.out.println("Enter the number of * for the base of the Triangle: ");
     int base = in.nextInt();
     in.close(); // Close Scanner to prevenet Resource Leak
     String c = "*"; //Char to print repeatedly

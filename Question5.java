@@ -29,12 +29,12 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     ArrayList<Integer> numbers = new ArrayList<>();
-    System.out.print("How many numbers do you want? ");
+    // System.out.print("How many numbers do you want? ");
     int repetion = in.nextInt();
 
     // Get User Inputs (numbers)
     for (int i = 0; i < repetion; i++) {
-      System.out.print("Type a number: ");
+      // System.out.print("Type a number: ");
       numbers.add(in.nextInt());
     }
     in.close(); // Close Scanner to prevenet Resource Leak (Inputs no longer required)
@@ -58,6 +58,6 @@ public class Question5
       }
     }
     
-    System.out.println("\nMode: " + mode);
+    System.out.println(mode);
   }
 }
