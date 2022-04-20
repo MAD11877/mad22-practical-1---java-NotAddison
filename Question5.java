@@ -56,9 +56,6 @@ public class Question5
         highest = count;
         mode = integer;
       }
-      else if (count == highest){ // Bimodal Case
-        continue;
-      }
     }
     
     System.out.println("\nMode: " + mode);
