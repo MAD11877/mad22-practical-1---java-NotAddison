@@ -21,13 +21,27 @@ public class Question4
     // System.out.println("Enter the number of * for the base of the Triangle: ");
     int base = in.nextInt();
     in.close(); // Close Scanner to prevenet Resource Leak
+    
     String c = "*"; //Char to print repeatedly
+    
+    
+    // --- Method 1 ; Single Loop ---
+    // do{
+    //   System.out.println(c.repeat(base)); // Just repeats the character x number of times based on the user input
+    //   base--;
+    // }
+    // while(base!=0);
 
+    // --- Method 2 ; Double Loop ---
     do{
-      System.out.println(c.repeat(base)); // Just repeats the character x number of times based on the user input
+      for (int i = 0; i < base; i++) {
+        System.out.print(c);
+      }
+      System.out.println("");
       base--;
     }
     while(base!=0);
-    
+
+
   }
 }
